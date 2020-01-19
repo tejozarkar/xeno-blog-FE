@@ -18,15 +18,15 @@ export class RegistrationComponent implements OnInit {
   ngOnInit() {
   }
 
-  public onRegister(): void{
-    let user = {
+  public onRegister(): void {
+    const user = {
       username: this.username,
       password: this.password,
       firstName: this.firstName,
       lastName: this.lastName
-    }
+    };
     this.authService.register(user)
-    .subscribe(resp=>{
+    .subscribe(resp => {
       console.log(resp);
     });
   }
