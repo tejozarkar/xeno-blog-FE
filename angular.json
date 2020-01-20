@@ -119,7 +119,56 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "xeno:serve:production"
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "aot": true,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ]
+            },
+            "sahil": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "aot": true,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.sahil.ts"
+                }
+              ]
+            },
+            "tejas": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "aot": true,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.tejas.ts"
+                }
+              ]
+            },
+            "vibhu": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "aot": true,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.vibhu.ts"
+                }
+              ]
             }
           }
         }
